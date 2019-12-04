@@ -6,12 +6,20 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-axway": "^2.0.14",
-    "eslint-plugin-alloy": "^1.0.0"
+    "@ti.types/titanium": "^9.0.5",
+    "@types/backbone": "^1.4.1",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "alloy": "git+ssh://git@github.com/TiStrong/alloy.git#feature/typescript",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
   },
   "scripts": {
-    "lint": "eslint app",
+    "lint": "eslint app/ --ext .js,.ts",
+    "format": "eslint app/ --fix --ext .js,.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

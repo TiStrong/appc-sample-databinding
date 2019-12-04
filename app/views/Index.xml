@@ -3,7 +3,7 @@
   <Collection src="Fruit" />
   <!-- The open source xp.ui commonjs module is used here to make NavigationWindow cross platform. 
        See app/lib/xp.ui.js for details and link to GitHub repository. -->
-  <NavigationWindow module="xp.ui" id="navWin">
+  <NavigationWindow id="navWin">
     <Window class="windowStyling">
       <View id="filterWrapper">
         <Button id="filterButton" onClick="showFilterDialog" />
@@ -49,7 +49,7 @@
       </ListView>
     </Window>
   </NavigationWindow>
-  
+
   <OptionDialog id="sortDialog" onClick="handleSortDialog">
     <Options>
       <Option>Name</Option>

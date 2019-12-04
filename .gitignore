@@ -1,7 +1,10 @@
 .DS_Store
+/app/gen
 /Resources
 /platform
 /i18n
+/node_modules
+/.idea
 build.log
 build
 npm-debug.log

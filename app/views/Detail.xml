@@ -13,9 +13,9 @@
     <View id="amountWrapper">
     <!-- Manipulator is a custom property we're using so we don't need multiple onClick callbacks. Check
       detail.js how it is used. -->
-      <Button class="amountButton" title="-" manipulator="-1" onClick="alterAmount" />
-      <Label id="amountLabel" text="{$.fruit.amount}" />
-      <Button class="amountButton" title="+" manipulator="1" onClick="alterAmount" />
+      <Button class="amountButton" title="-" onClick="alterAmount" />
+      <Label id="amountLabel" text="{$.fruit.amount.toString()}" />
+      <Button class="amountButton" title="+" onClick="alterAmount" />
     </View>
   </Window>
 </Alloy>
